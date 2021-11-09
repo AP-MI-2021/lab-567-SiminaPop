@@ -1,29 +1,31 @@
-def create_cheltuieli(id, numar_apartament, suma, data, tipul):
+def create_cheltuiala(id, nr_ap, suma, data, tipul):
     '''
     :param id: string
-    :param numar_apartament: int
-    :param suma: int
+    :param nr_ap: int
+    :param suma: float
     :param data: int
     :param tipul: string
     :return: Dict
     '''
+    # return [id, nr_ap, suma, data, tipul]
 
     return {
         "id": id,
-        "numar_apartament": numar_apartament,
+        "nr_ap": nr_ap,
         "suma": suma,
         "data": data,
         "tipul": tipul,
     }
 
-def get_id(cheltuieli):
+def get_id(cheltuiala):
     '''
-    :param cheltuieli: Dict
+    :param cheltuiala: Dict
     :return: id: string
     '''
-    return cheltuieli['id']
+    # return cheltuiala[0]
+    return cheltuiala['id']
 
-def set_id(cheltuieli, id):
+def set_id(cheltuiala, id):
     '''
     Setarea id la cheltuiala
     :param cheltuiala: Dict
