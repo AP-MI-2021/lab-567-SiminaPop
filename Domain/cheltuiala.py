@@ -7,7 +7,6 @@ def create_cheltuiala(id, nr_ap, suma, data, tipul):
     :param tipul: string
     :return: Dict
     '''
-    # return [id, nr_ap, suma, data, tipul]
 
     return {
         "id": id,
@@ -22,7 +21,6 @@ def get_id(cheltuiala):
     :param cheltuiala: Dict
     :return: id: string
     '''
-    # return cheltuiala[0]
     return cheltuiala['id']
 
 def set_id(cheltuiala, id):
@@ -39,7 +37,6 @@ def get_nr_ap(cheltuiala):
     :param cheltuiala: Dict
     :return: nr_ap: int
     '''
-    # return cheltuiala[1]
     return cheltuiala['nr_ap']
 
 def set_nr_ap(cheltuiala, nr_ap):
@@ -56,7 +53,6 @@ def get_suma(cheltuiala):
     :param cheltuiala: Dict
     :return: suma: int
     '''
-    # return cheltuiala[2]
     return cheltuiala['suma']
 
 def set_suma(cheltuiala, suma):
@@ -73,7 +69,6 @@ def get_data(cheltuiala):
     :param cheltuiala: Dict
     :return: data: string
     '''
-    # return cheltuiala[3]
     return cheltuiala['data']
 
 def set_data(cheltuiala, data):
@@ -90,7 +85,6 @@ def get_tipul(cheltuiala):
     :param cheltuiala: Dict
     :return: tipul: string
     '''
-    # return cheltuiala[4]
     return cheltuiala['tipul']
 
 def set_tipul(cheltuiala, tipul):

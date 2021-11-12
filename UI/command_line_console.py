@@ -39,11 +39,11 @@ def run_comenzi(cheltuieli):
                 help()
             elif action[0] == 'add':
                 try:
-                    cheltuieli = add_cheltuiala(cheltuieli, action[1], action[2], action[3], action[4], action[5])
+                    cheltuieli = add_cheltuiala(cheltuieli, action[1], action[2], action[3], action[4], action[5], [], [])
                 except IndexError as ie:
                     print(f"Eroare: {ie}")
             elif action[0] == 'delete':
-                cheltuieli = delete_cheltuiala(cheltuieli, action[1])
+                cheltuieli = delete_cheltuiala(cheltuieli, action[1], [], [])
             elif action[0] == 'showall':
                 show_all(cheltuieli)
             elif action[0] == 'exit':
